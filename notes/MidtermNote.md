@@ -235,6 +235,7 @@ fork() make exact copy of current state of the execution
       |   +-------------+
       +-> | FCFS        | -->
           +-------------+
+    
     ```
 
       * Q0 and Q1 use RR. Q2 uses FCFS.

@@ -216,26 +216,26 @@ fork() make exact copy of current state of the execution
     * Use multiple queues but move a process to lower priority queues if it takes too much CPU time.
     * Example
 
-```bash
-      Q0
-      +-------------+
-  --> | quantum: 8  | --+
-      +-------------+   |
-                        |
-  +---------------------+
-  |
-  |   Q1
-  |   +-------------+
-  +-> | quantum: 16 | --+
-      +-------------+   |
-                        |
-  +---------------------+
-  |
-  |   Q2
-  |   +-------------+
-  +-> | FCFS        | -->
-      +-------------+
-```
+    ```bash
+          Q0
+          +-------------+
+      --> | quantum: 8  | --+
+          +-------------+   |
+                            |
+      +---------------------+
+      |
+      |   Q1
+      |   +-------------+
+      +-> | quantum: 16 | --+
+          +-------------+   |
+                            |
+      +---------------------+
+      |
+      |   Q2
+      |   +-------------+
+      +-> | FCFS        | -->
+          +-------------+
+    ```
 
       * Q0 and Q1 use RR. Q2 uses FCFS.
       * `Process A` enters Q0, and gets 8 ms (RR).

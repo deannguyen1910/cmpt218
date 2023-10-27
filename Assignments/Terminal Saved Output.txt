@@ -1,0 +1,273 @@
+~/units/02-tools❯ git config --global user.name "deannguyen1910"                                             
+~/units/02-tools❯ git config --global user.email "dvn2@sfu.ca""                                              
+dquote> "
+~/units/02-tools❯ git config --global user.email "dvn2@sfu.ca"                                               
+~/units/02-tools❯ git clone git@github.com:SFU-CMPT-201/a0-deannguyen1910.git                                
+Cloning into 'a0-deannguyen1910'...
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+~/units/02-tools❯ git clone git@github.com:SFU-CMPT-201/a0-deannguyen1910.git                         128 ↵  
+Cloning into 'a0-deannguyen1910'...
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+~/units/02-tools❯ git clone git@github.com:SFU-CMPT-201/a0-deannguyen1910.git                         128 ↵  
+Cloning into 'a0-deannguyen1910'...
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+~/units/02-tools❯ git clone git@github.com:SFU-CMPT-201/a0-deannguyen1910.git                         128 ↵  
+Cloning into 'a0-deannguyen1910'...
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+~/units/02-tools❯ git clone git@github.com:SFU-CMPT-201/a0-deannguyen1910.git                         128 ↵  
+Cloning into 'a0-deannguyen1910'...
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+~/units/02-tools❯ git clone git@github.com:SFU-CMPT-201/a0-deannguyen1910.git                         128 ↵  
+Cloning into 'a0-deannguyen1910'...
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+~/units/02-tools❯ git clone git@github.com:SFU-CMPT-201/a0-deannguyen1910.git                         128 ↵  
+Cloning into 'a0-deannguyen1910'...
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+~/units/02-tools❯ gh auth login -p ssh -w                                                             128 ↵  
+? You're already logged into github.com. Do you want to re-authenticate? Yes
+? Upload your SSH public key to your GitHub account? /home/cmpt201/.ssh/id_ed25519.pub
+? Title for your SSH key: cmpt201
+
+! First copy your one-time code: C836-3425
+Press Enter to open github.com in your browser...                 
+! Failed opening a web browser at https://github.com/login/device
+  exec: "xdg-open,x-www-browser,www-browser,wslview": executable file not found in $PATH
+  Please try entering the URL in your browser manually
+✓ Authentication complete.
+- gh config set -h github.com git_protocol ssh
+✓ Configured git protocol
+✓ Uploaded the SSH key to your GitHub account: /home/cmpt201/.ssh/id_ed25519.pub
+✓ Logged in as deannguyen1910
+~/units/02-tools❯ git clone git@github.com:SFU-CMPT-201/a0-deannguyen1910.git                                
+Cloning into 'a0-deannguyen1910'...
+Enter passphrase for key '/home/cmpt201/.ssh/id_ed25519': 
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+~/units/02-tools❯ git clone git@github.com:SFU-CMPT-201/a0-deannguyen1910.git                         128 ↵  
+Cloning into 'a0-deannguyen1910'...
+Enter passphrase for key '/home/cmpt201/.ssh/id_ed25519': 
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+~/units/02-tools❯ git clone git@github.com:SFU-CMPT-201/a4-deannguyen1910.git                         128 ↵  
+Cloning into 'a4-deannguyen1910'...
+Enter passphrase for key '/home/cmpt201/.ssh/id_ed25519': 
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+~/units/02-tools❯ git clone git@github.com:SFU-CMPT-201/a5-deannguyen1910.git                         128 ↵  
+Cloning into 'a5-deannguyen1910'...
+Enter passphrase for key '/home/cmpt201/.ssh/id_ed25519': 
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+~/units/02-tools❯ sudo git clone git@github.com:SFU-CMPT-201/a0-deannguyen1910.git                    128 ↵  
+[sudo] password for cmpt201: 
+Sorry, try again.
+[sudo] password for cmpt201: 
+sudo: 1 incorrect password attempt
+~/units/02-tools❯ cd --                                                                                 1 ↵  
+~❯ clang                                                                                                     
+clang: error: no input files
+~❯ lvvm                                                                                                 1 ↵  
+zsh: command not found: lvvm
+                                                                                                              
+~❯                                                                                                    127 ↵  
+                                                                                                              
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+                                                                                                              
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯ M                                                                                                  127 ↵  
+
+zsh: command not found: M
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+                                                                                                              
+~❯                                                                                                    127 ↵  
+                                                                                                              
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯ M                                                                                                  127 ↵  
+
+zsh: command not found: M
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯ M                                                                                                  127 ↵  
+
+zsh: command not found: M
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+                                                                                                              
+~❯                                                                                                    127 ↵  
+                                                                                                              
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  
+~❯                                                                                                    127 ↵  

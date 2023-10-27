@@ -200,10 +200,10 @@ fork() make exact copy of current state of the execution
   * 
 
 
-## Virtual Memory
-  # First In First Out
-  # Least Recent Used
-  # Second Chance 
+# Virtual Memory
+  ## First In First Out
+  ## Least Recent Used
+  ## Second Chance 
 
 * This algorithm is an approximation of LRU.
     * Each page has a reference bit (ref_bit), initially = 0
@@ -216,4 +216,4 @@ fork() make exact copy of current state of the execution
             * Move pointer to next page.
             * Repeat till a victim is found.
 
-  # Thrashing
+  ## Thrashing

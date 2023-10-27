@@ -180,26 +180,82 @@ fork() make exact copy of current state of the execution
 
 
 
-## Scheduling
-  * First Come, First Served
+# Scheduling
+  ## First Come, First Served
     * Preemptive
 
-  * Shortest Job First
+  ## Shortest Job First
     * Non preemptive
 
-  * Shortest Remaining Time First
+  ## Shortest Remaining Time First
+    * Let's try something where a long process doesn't sabotage all other processes.
+    * Among the remaining processes, pick the process with the shortest execution time.
+    * Assume for the sake of discussion, we know how long each process takes.
+    * Non-preemptive
+    * Example
+        * Execution times
+            * P1: 7, P2: 4, P3: 1, P4: 4
+        * Arrival times
+            * P1: 0, P2: 2, P3: 4, P4: 5
+        * Steps
+            * (Draw a timeline diagram yourself to better understand the steps.)
+            * P1 runs until time 7.
+            * P3 is the shorted job, so P3 runs next until it's done (time 8).
+            * P2 and P4 are the next shorted jobs (tie). The scheduler can pick any one of them. Let's
+              assume the scheduler picks P2. So P2 runs until it's done (time 12).
+            * P4 is the next shorted job and runs until it's done (time 16).
+        * Average waiting time?
+            * (0 + 6 + 3 + 7) / 4  = 4
+  ## Round Robin
 
-  * Round Robin
+  ## Priority Scheduling (Same as heuristic)
 
-  * Priority Scheduling (Same as heuristic)
+  ## Multilevel Queue Scheduling
 
-  * Multilevel Queue Scheduling
+  ## Multilevel Feedback Queue Scheduling
+    * Use multiple queues but move a process to lower priority queues if it takes too much CPU time.
+    * Example
 
-  * Multilevel Feedback Queue Scheduling
+```bash
+      Q0
+      +-------------+
+  --> | quantum: 8  | --+
+      +-------------+   |
+                        |
+  +---------------------+
+  |
+  |   Q1
+  |   +-------------+
+  +-> | quantum: 16 | --+
+      +-------------+   |
+                        |
+  +---------------------+
+  |
+  |   Q2
+  |   +-------------+
+  +-> | FCFS        | -->
+      +-------------+
+```
+
+      * Q0 and Q1 use RR. Q2 uses FCFS.
+      * `Process A` enters Q0, and gets 8 ms (RR).
+      * If it does not finish, move it to Q1.
+      * Run all other processes in Q0.
+      * When there is no more processes left in Q0, run processes in Q1 (e.g., `Process A`).
+      * `Process A` gets 16 ms (RR).
+      * If `Process A` is still not done, move it to Q2.
+      * Run all other processes in Q0 and Q1.
+      * When there is no more processes left in Q0 and Q1, run processes in Q2 (e.g., `Process A`).
+      * Run `Process A` until it's done (FCFS).
+      * This is one example, and one can use other scheduling algorithms for the queues. The key is
+        lowering priority by moving to a lower priority queue if a process runs for too long. This is
+        called process *aging*.
   
-  * 
 
 
+
+
+  ## 
 # Virtual Memory
   ## First In First Out
   ## Least Recent Used

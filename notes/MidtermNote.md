@@ -178,34 +178,72 @@ Output:
 # A9
 fork() make exact copy of current state of the execution
 
-
-
 # Scheduling
-  ## First Come, First Served
-    * Preemptive
+## First Come, First Served (FCFS)
 
-  ## Shortest Job First
-    * Non preemptive
+* Run in the order of arrival.
+* Non-preemptive
+* Example
+    * P1 takes 24 time units. P2: 3. P3: 3.
+    * Suppose 3 processes arrive around the same time but gets added to the ready queue in the order
+      of P1, P2, P3.
+    * What is the waiting time?
+        * P1 = 0; P2  = 24; P3 = 27
+    * What is the average waiting time?
+        * (0 + 24 + 27) / 3 = 17
+    * Calculating the waiting time and the average waiting time evaluates your understanding.
+    * Drawing a diagram like the following is a good idea to understand various scheduling
+      algorithms.
+
+      ```bash
+      +------------------+
+      | P1     | P2 | P3 |
+      +------------------+
+      0        24   27   30
+      ```
+* Problem?
+    * A long process can sabotage all other processes.
+  
+## Shortest Job First (SJF)
+
+* Let's try something where a long process doesn't sabotage all other processes.
+* Among the remaining processes, pick the process with the shortest execution time.
+* Assume for the sake of discussion, we know how long each process takes.
+* Non-preemptive
+* Example
+    * Execution times
+        * P1: 7, P2: 4, P3: 1, P4: 4
+    * Arrival times
+        * P1: 0, P2: 2, P3: 4, P4: 5
+    * Steps
+        * (Draw a timeline diagram yourself to better understand the steps.)
+        * P1 runs until time 7.
+        * P3 is the shorted job, so P3 runs next until it's done (time 8).
+        * P2 and P4 are the next shorted jobs (tie). The scheduler can pick any one of them. Let's
+          assume the scheduler picks P2. So P2 runs until it's done (time 12).
+        * P4 is the next shorted job and runs until it's done (time 16).
+    * Average waiting time?
+        * (0 + 6 + 3 + 7) / 4  = 4
 
   ## Shortest Remaining Time First
-    * Let's try something where a long process doesn't sabotage all other processes.
-    * Among the remaining processes, pick the process with the shortest execution time.
-    * Assume for the sake of discussion, we know how long each process takes.
-    * Non-preemptive
-    * Example
-        * Execution times
-            * P1: 7, P2: 4, P3: 1, P4: 4
-        * Arrival times
-            * P1: 0, P2: 2, P3: 4, P4: 5
-        * Steps
-            * (Draw a timeline diagram yourself to better understand the steps.)
-            * P1 runs until time 7.
-            * P3 is the shorted job, so P3 runs next until it's done (time 8).
-            * P2 and P4 are the next shorted jobs (tie). The scheduler can pick any one of them. Let's
-              assume the scheduler picks P2. So P2 runs until it's done (time 12).
-            * P4 is the next shorted job and runs until it's done (time 16).
-        * Average waiting time?
-            * (0 + 6 + 3 + 7) / 4  = 4
+  * Let's try something where a long process doesn't sabotage all other processes.
+  * Among the remaining processes, pick the process with the shortest execution time.
+  * Assume for the sake of discussion, we know how long each process takes.
+  * Non-preemptive
+  * Example
+      * Execution times
+          * P1: 7, P2: 4, P3: 1, P4: 4
+      * Arrival times
+          * P1: 0, P2: 2, P3: 4, P4: 5
+      * Steps
+          * (Draw a timeline diagram yourself to better understand the steps.)
+          * P1 runs until time 7.
+          * P3 is the shorted job, so P3 runs next until it's done (time 8).
+          * P2 and P4 are the next shorted jobs (tie). The scheduler can pick any one of them. Let's
+            assume the scheduler picks P2. So P2 runs until it's done (time 12).
+          * P4 is the next shorted job and runs until it's done (time 16).
+      * Average waiting time?
+          * (0 + 6 + 3 + 7) / 4  = 4
   ## Round Robin
 
   ## Priority Scheduling (Same as heuristic)
@@ -216,7 +254,8 @@ fork() make exact copy of current state of the execution
     * Use multiple queues but move a process to lower priority queues if it takes too much CPU time.
     * Example
 
-    ```bash
+    ``` bash
+  
           Q0
           +-------------+
       --> | quantum: 8  | --+
@@ -256,7 +295,7 @@ fork() make exact copy of current state of the execution
 
 
 
-  ## 
+
 # Virtual Memory
   ## First In First Out
   ## Least Recent Used

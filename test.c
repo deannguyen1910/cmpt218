@@ -1,28 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 
-long factorial(int n);
+static struct header *memhead;
 
-int main(void) {
-  char input_buffer[10];
-  int n = 0;
+struct allocinfo {
+  int free_size;
+  int free_chunks;
+  int largest_free_chunk_size;
+  int smallest_free_chunk_size;
+};
 
-  if (fgets(input_buffer, sizeof(input_buffer), stdin) == NULL) {
-    printf("Error reading input.\n");
-    return 1;
-  }
-
-  n = atoi(input_buffer);
-  printf("%d", n);
-  long val = factorial(n);
-  printf("%ld\n", val);
-  return 0;
-}
-
-long factorial(int n) {
-  long result = 1;
-  while (n--) {
-    result *= n;
-  }
-  return result;
+void main() {
+    struct allocinfo *temp = malloc(sizeof(struct allocinfo));
+    printf("%d", temp->free_size);
 }
